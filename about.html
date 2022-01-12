@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Rólam - Ocskó Bianka Referencia</title>
+</head>
+<header>
+    <div class="navigation">
+        <ul>
+            <li class="list">
+                <a href="index.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">Főoldal</span>
+                </a>
+            </li>
+            <li class="list active">
+                <a href="about.html">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="text">Magamról</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="codes.html">
+                    <span class="icon"><ion-icon name="code-slash-outline"></ion-icon></span>
+                    <span class="text">Kódok</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="gallery.html">
+                    <span class="icon"><ion-icon name="images-outline"></ion-icon></span>
+                    <span class="text">Galéria</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="contact.html">
+                    <span class="icon"><ion-icon name="at-outline"></ion-icon></span>
+                    <span class="text">Kapcsolat</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+</header>
+<body class="about_body">
+    <div class="about_content">
+        <h1>Magamról</h1>
+        <p>
+            Először is, köszöntelek az oldalon, ahol kicsit jobban megismerhetsz. A nevem Ocskó Bianka és jelenleg tanuló vagyok. Budafokon élek a családommal, amióta csak az eszemet tudom. 
+            Mivel az egész családom nagy állatbarát, így a családom része még a 2 hullámos papagájunk, Kivi <i>(2019.05.04)</i> és Pötyi <i>(2020.07.24)</i>, illetve az afrikai óriáscsigánk 
+            Zsigubigule <i>(2012.07.21)</i>.<br>
+            A szabadidőmet hétköznaponként általában a League of Legends világában töltöm, vagy ha a játékhoz már nincs kedvem, akkor a FireAlpaka programban alkotgatok. Viszont hétvégente 
+            ha az idő is úgy gondolja, sokat túrázok és élek a másik hobbimnak, a természetfotózásnak. De ha esetleg ezek közül egyik sem nyeri el a tetszésemet, akkor sincsen gond, mert 
+            még ezek után is biztos találok otthon valamit, amivel tudok barkácsolni, alkotni, létrehozni valamit, vagy ha nem, akkor legalább készíteni egy finom ételt vagy sütit.<br>
+        </p>
+        <h2>Iskoláim, tanulmányaim, végzettségeim</h2>
+        <p>
+            Az általános iskolai éveimet <i>(2006-2014)</i> úgyszint Budafokon töltöttem, talán 500m-re a házunktól, a Kolonics György Általános Iskola dráma és sport tagozatán. Számtalan 
+            élményt és sikert köszönhetek ennek az iskolának, mivel megállás nélkül részt vehettem különbözőbbnél különbözőbb előadás készítésekben és fellépésekben a dráma és 
+            angol csoportjaimnak hála, illetve a temérdek sportrendezvényen való részvétel alatt ahonnan számos érmem is származik.<br>
+
+            Ezt követően, kicsivel távolabb a megszokott 22. kerülettől, elfelezve a számot, a 11. kerületben kezdtem meg a gimnáziumi tanulmányaimat az Újbudai Széchenyi István Gimnáziumban 
+            <i>(2014-2019)</i>. Mivel már a kezdésnél 4 év helyett én az 5 éves nyelvi előkészítőt választottam, így élményekből és tudásból itt sem kaptam kevesebbet. Ezeket felhasználva, 
+            2018-ban megszereztem az angol középfokú nyelvvizsgát, illetve ugyan ebben az évben, az előrehozott angol és informatika érettségik mellett az ECDL képesítést is.<br>
+
+            Mivel az előző két iskolám ennyire közel volt, így úgy döntöttem, hogy nem megyek akkor már harmadszorra sem messzebb és felvételt nyertem az ELTE IK programtervező informatikus 
+            (fejlesztő) felsőoktatási szakképzésére 2019-ben és a mai napig is itt tanulok.
+        </p>
+        <h2>Használt programok, tanult nyelvel</h2>
+        <p></p>
+    </div>
+
+
+
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click', activeLink));
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
-/* ----- NAVBAR ----- */
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *
 {
     margin: 0;
@@ -21,6 +21,8 @@ body
     padding-top: 20px;
     background-position: center;
 }
+
+/* ----- NAVBAR ----- */
 header
 {
     display: flex;
@@ -194,6 +196,8 @@ header
     border-radius: 20px;
     padding: 30px;
     margin: 0 30 30 30;
+    
+
 }
 /* ----- KAPCSOLAT VÉGE ----- */
 
@@ -222,10 +226,6 @@ header
 }
 /* ----- GALÉRIA VÉGE ----- */
 
-.szöveg, h2
-{
-    padding-left: 30px;
-}
 
 
 
@@ -241,7 +241,7 @@ header
 
 
 /* ----- FOOTER ----- */
-footer
+.footer
 {
     text-align: center;
     padding: 3px;
@@ -435,4 +435,296 @@ ul.ftr li a:hover::before
     50% {transform: rotateY(180deg);}
     75% {transform: rotateY(270deg);}
     100% {transform: rotateY(360deg);}
+}
+
+
+
+
+
+
+.moving
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.card
+{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: block;
+    align-items: center;
+    transition: 0.5s;
+}
+.card .circle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.card .circle::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #cf8e94;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+.card:hover .circle::before
+{
+    background: #a6c3d3;
+    clip-path: circle(400px at center);
+    border-radius: 20px;
+}
+.card img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 220px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.card:hover img
+{
+    left: 72%;
+    height: 320px;
+}
+.card .content
+{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.card:hover .content
+{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.card .content h2
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+.card .content p
+{
+    color: #fff;
+}
+.card .content a
+{
+    position: relative;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    color: black;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+}
+@media (max-width: 991px)
+{
+    .moving
+    {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .card
+    {
+        
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .card:hover
+    {
+        height: 600px;
+    }
+    .card .content
+    {
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+    .card:hover img
+    {
+        top: 70%;
+        left: 50%;
+        height: 300px;
+    }
+}
+@media (max-width: 420px)
+{
+    .card .content
+    {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+.bluredbg_index
+{
+    background-color: #ffffff60;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30;
+}
+
+
+
+
+
+
+.webpg
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.webpg_card
+{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    display: block;
+    align-items: center;
+}
+.webpg_card img.big
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+}
+.webpg_content{
+    padding-top: 50%;
+    text-align: center;
+}
+
+
+
+.contact_body
+{
+    background-image: url("../img/connection_bg.jpg");
+}
+.contact_container
+{
+    line-height: 1.6;
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+}
+.buscard
+{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 630px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+    background-color: #ffffff60;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+.social-list
+{
+    
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+.social-link
+{
+    color: black;
+    opacity: 0,5;
+    font-size: 1.125rem;
+}
+.social-item:hover
+{
+    transform: scale(1.1);
+}
+.profile-image
+{
+    border-radius: 50%;
+    border: 4px solid white;
+}
+.profile-name
+{
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+.profile-name::after
+{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 2em;
+    background-color: blueviolet;
+    margin: 0.7em auto 0.5em;
+    opacity: 0.35;
+}
+.profile-position
+{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 3px;
+    margin-bottom: 2em;
+}
+.profile-body
+{
+    font-weight: 300;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+.social-list a
+{
+    text-decoration: none;
+}
+@media (min-width: 600px)
+{
+    .buscard
+    {
+        flex-direction: row;
+    }
+    .profile-main
+    {
+        text-align: left;
+        margin-left: 2em;
+    }
+    .profile-name::after
+    {
+        margin-left: 0;
+    }
 }

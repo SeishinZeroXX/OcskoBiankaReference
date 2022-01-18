@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Kapcsolat - Ocskó Bianka Referencia</title>
+    <title>Kapcsolat - Ocskó Bianka</title>
 </head>
 <header>
     <div class="navigation">
@@ -24,7 +24,7 @@
             <li class="list">
                 <a href="codes.html">
                     <span class="icon"><ion-icon name="code-slash-outline"></ion-icon></span>
-                    <span class="text">Kódok</span>
+                    <span class="text">Büszkeségeim</span>
                 </a>
             </li>
             <li class="list">
@@ -44,30 +44,40 @@
     </div>
 </header>
 <body class="contact_body">
-    <div class="contact_content">
-        <h1><u>Kapcsolat</u></h1><br>
-        <a class="contact_icon" href="img/OcskóBiankaCV.pdf" download="OcskóBiankaCV"><img src="img/cv.png" width="35" height="35"></a><br>
-        <a class="contact_icon" href="tel:+3630-433-3404"><ion-icon name="call-outline"></ion-icon> +36 30 433 3404</a><br>
-        <a class="contact_icon" href="mailto:ocsko.bianka@gmail.com"><ion-icon name="at-outline"></ion-icon> ocsko.bianka@gmail.com</a><br>
-        <a class="contact_icon" href="https://www.facebook.com/bianka28466/"><ion-icon name="logo-facebook"></ion-icon> https://www.facebook.com/bianka28466/</a><br>
-        <a class="contact_icon" href="https://www.linkedin.com/in/bianka-ocskó-370330223/"><ion-icon name="logo-linkedin"></ion-icon> https://www.linkedin.com/in/bianka-ocskó-370330223/</a><br>
+    <div class="contact_container">
+        <div class="buscard">
+            <div class="profile-sidebar">
+                <img class="profile-image" src="img/busimg.jpg" style="height: 125px;">
+            </div>
+            <div class="profile-main">
+                <h2 class="profile-name">Ocskó Bianka</h2>
+                <p class="profile-position">Tanuló</p>
+                
+                <p class="profile-body">
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a aria-label="cv" class="social-link" href="img/OcskóBiankaCV.pdf" target="blank" download="OcskóBiankaCV"><ion-icon name="document-text-outline"></ion-icon> CV</a>
+                        </li>
+                        <li class="social-item">
+                            <a aria-label="telefon" class="social-link" href="tel:+3630-433-3404" target="blank"><ion-icon name="call-outline"></ion-icon> +36 30 433 3404</a>
+                        </li>
+                        <li class="social-item">
+                            <a aria-label="email" class="social-link" href="mailto:ocsko.bianka@gmail.com" target="blank"><ion-icon name="at-outline"></ion-icon> ocsko.bianka@gmail.com</a>
+                        </li>
+                        <li class="social-item">
+                            <a aria-label="facebook" class="social-link" href="https://www.facebook.com/OcskoBianka/" target="blank"><ion-icon name="logo-facebook"></ion-icon> facebook.com/OcskoBianka</a>
+                        </li>
+                        <li class="social-item">
+                            <a aria-label="linkedin" class="social-link" href="https://www.linkedin.com/in/bianka-ocskó-370330223/" target="blank"><ion-icon name="logo-linkedin"></ion-icon> linkedin.com/in/bianka-ocskó-370330223</a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
     </div>
-
-
-
-
-    <script>
-        const list = document.querySelectorAll('.list');
-        function activeLink(){
-            list.forEach((item) =>
-            item.classList.remove('active'));
-            this.classList.add('active');
-        }
-        list.forEach((item) =>
-        item.addEventListener('click', activeLink));
-    </script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    
+<script src="/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

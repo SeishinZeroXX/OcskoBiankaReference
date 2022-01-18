@@ -4,77 +4,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Főoldal - Ocskó Bianka Referencia</title>
+    <title>Főoldal - Ocskó Bianka</title>
 </head>
-<header>
-    <div class="navigation">
-        <ul>
-            <li class="list active">
-                <a href="index.html">
-                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                    <span class="text">Főoldal</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="about.html">
-                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                    <span class="text">Magamról</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="codes.html">
-                    <span class="icon"><ion-icon name="code-slash-outline"></ion-icon></span>
-                    <span class="text">Kódok</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="gallery.html">
-                    <span class="icon"><ion-icon name="images-outline"></ion-icon></span>
-                    <span class="text">Galéria</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="contact.html">
-                    <span class="icon"><ion-icon name="at-outline"></ion-icon></span>
-                    <span class="text">Kapcsolat</span>
-                </a>
-            </li>
-            <div class="indicator"></div>
-        </ul>
-    </div>
-</header>
 <body>
-    <div class="content">
-        <h1 style="color: white;">főoldalaa</h1>
-    </div>
+    <section class="main">
+        <header>
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <a href="index.html">
+                            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                            <span class="text">Főoldal</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="about.html">
+                            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                            <span class="text">Magamról</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="codes.html">
+                            <span class="icon"><ion-icon name="code-slash-outline"></ion-icon></span>
+                            <span class="text">Büszkeségeim</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="gallery.html">
+                            <span class="icon"><ion-icon name="images-outline"></ion-icon></span>
+                            <span class="text">Galéria</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="contact.html">
+                            <span class="icon"><ion-icon name="at-outline"></ion-icon></span>
+                            <span class="text">Kapcsolat</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+        </header>
 
+        <div class="bluredbg_index">
+            <div class="moving">
+                <div class="card">
+                    <div class="circle">
+                        <div class="content">
+                            <h2>Érdekességek</h2>
+                            <p>Az oldalakon találkozhatsz interaktív elemekkel is, így lehet, hogy pár információ el van rejtve. Ne félj felfedezni minden zugot!</p>
+                        </div>
+                        <img src="/img/idea.png">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle">
+                        <div class="content">
+                            <h2>Ocskó Bianka</h2>
+                            <p>Köszöntelek az oldalamon, ahol megismerhetsz engem, a projektjeim, a büszkeségeim és tájékozódhatsz kicsit rólam. Nézz körül bátran az oldal tetején található 
+                                menüsorban!
+                            </p>
+                        </div>
+                        <img src="/img/me.png">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle">
+                        <div class="content">
+                            <h2>Under construction</h2>
+                            <p>Mivel az oldal fejlesztés alatt van és (sajnos) nem gép vagyok, így becsúszhatnak hibák, amit nem látok. Viszont ha Te meglátsz valamit, örömmel veszem, 
+                                ha az elérhetőségeim egyikén jelzed azt nekem!
+                                <a href="known.html" target="blank">Amikről tudok</a>
+                            </p>
+                        </div>
+                        <img src="/img/uc.png">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-
-    <script>
-        const list = document.querySelectorAll('.list');
-        function activeLink(){
-            list.forEach((item) =>
-            item.classList.remove('active'));
-            this.classList.add('active');
-        }
-        list.forEach((item) =>
-        item.addEventListener('click', activeLink));
-    </script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+        <div class="footer">
+            <p>Ha esetleg akad bármi egyéb, amit meg szeretnél tudni rólam, ne habozz kapcsolatba lépni velem az elérhetőségeim egyikén, vagy a CV ikonra kattintva letölteni azt.</p>
+            <ul class="ftr">
+                <li><a href="tel:+3630-433-3404"><ion-icon name="call-outline"></ion-icon></a></li>
+                <li><a href="mailto:ocsko.bianka@gmail.com"><ion-icon name="at-outline"></ion-icon></ion-icon></a></li>
+                <li><a href="https://www.facebook.com/bianka28466/"><ion-icon name="logo-facebook"></ion-icon></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/bianka-ocskó-370330223/"><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a></li>
+                <li><a href="img/OcskóBiankaCV.pdf" download="OcskóBiankaCV"><img src="img/cv.png" width="30" height="30"></a></li>
+            </ul>
+        </div>
+    </section>
 </body>
-<footer>
-    <div>
-        <p>Ha esetleg akad bármi egyéb, amit meg szeretnél tudni rólam, ne habozz kapcsolatba lépni velem az elérhetőségeim egyikén, vagy a CV ikonra kattintva letölteni azt.</p>
-        <ul class="ftr">
-            <li><a href="tel:+3630-433-3404"><ion-icon name="call-outline"></ion-icon></a></li>
-            <li><a href="mailto:ocsko.bianka@gmail.com"><ion-icon name="at-outline"></ion-icon></ion-icon></a></li>
-            <li><a href="https://www.facebook.com/bianka28466/"><ion-icon name="logo-facebook"></ion-icon></ion-icon></a></li>
-            <li><a href="https://www.linkedin.com/in/bianka-ocskó-370330223/"><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a></li>
-            <li><a href="img/OcskóBiankaCV.pdf" download="OcskóBiankaCV"><img src="img/cv.png" width="30" height="30"></a></li>
-        </ul>
-    </div>
-</footer>
+<script src="/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>

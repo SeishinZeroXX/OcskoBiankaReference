@@ -21,8 +21,17 @@ body
     padding-top: 20px;
     background-position: center;
 }
+.bluredbg
+{
+    background-color: #ffffff60;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0px 30px 30px 30px;
+}
 
-/* ----- NAVBAR ----- */
+/* ------------------------------------------------------------ NAVBAR ------------------------------------------------------------ */
 header
 {
     display: flex;
@@ -40,7 +49,6 @@ header
     background: #fff7d1;
     display: flex;
     justify-content: center;
-    align-items: center;
     border-radius: 10px;
 }
 .navigation ul
@@ -130,7 +138,6 @@ header
     background: transparent;
     border-top-left-radius: 20px;
 }
-
 .navigation ul li:nth-child(1).active ~ .indicator
 {
     transform: translateX(calc(70px * 0));
@@ -151,297 +158,23 @@ header
 {
     transform: translateX(calc(70px * 4));
 }
-/* ----- NAVBAR VÉGE ----- */
 
-
-
+/* ------------------------------------------------------------ INDEX ÉS GALLERY CONTENT ------------------------------------------------------------ */
 .content
 {
     position: relative;
 }
 
-
-
-/* ----- KAPCSOLAT ----- */
-.contact_icon
-{
-    font-size: 30px;
-    color: black;
-    text-decoration: none;
-}
-.contact_body
-{
-    background-image: url("../img/connection_bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-}
-.contact_content
-{
-    text-align: center;
-
-    /*
-    width: 1000px;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 50px 0 50px 0;
-    */
-
-    background-color: #ffffff60;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 20px;
-    padding: 30px;
-    margin: 0 30 30 30;
-    
-
-}
-/* ----- KAPCSOLAT VÉGE ----- */
-
-
-
-/* ----- GALÉRIA ----- */
-.gallery
-{
-    margin: 0 30 30 30;
-    background-color: #ffffff60;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 20px;
-}
-.gallery img
-{
-    transition: 1s;
-    padding: 15px;
-    width: 200px;
-    height: 200px;
-}
-.gallery img:hover
-{
-    filter: grayscale(100%);
-    transform: scale(1.1);
-}
-/* ----- GALÉRIA VÉGE ----- */
-
-
-
-
-.bluredbg
+/* ------------------------------------------------------------ INDEX ------------------------------------------------------------ */
+.bluredbg_index
 {
     background-color: #ffffff60;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 20px;
     padding: 30px;
-    margin: 0 30 30 30;
+    margin: 30px;
 }
-
-
-/* ----- FOOTER ----- */
-.footer
-{
-    text-align: center;
-    padding: 3px;
-    background-color: DarkSalmon;
-    color: white;
-    position: absolute;
-    width: 100%;
-    margin-top: 0; /* ? */
-    
-}
-
-ul.ftr
-{
-    position: relative;
-    display: flex;
-    z-index: 2;
-    justify-content: center;
-}
-ul.ftr li
-{
-    position: relative;
-    list-style: none;
-    margin: 10px;
-}
-ul.ftr li a
-{
-    position: relative;
-    width: 60px;
-    height: 60px;
-    display: inline-block;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
-    font-size: 2em;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 5px 45px rgba(0,0,0,0.1);
-    backdrop-filter: blur(2px);
-    transition: 0.5s;
-    overflow: hidden;
-}
-ul.ftr li a:hover
-{
-    transform: translateY(-20px);
-}
-ul.ftr li a::before
-{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5);
-    transform: skewX(45deg) translateX(150px);
-    transition: 0.5s;
-}
-ul.ftr li a:hover::before
-{
-    transform: skewX(45deg) translateX(-150px);
-}
-/* ----- FOOTER VÉGE ----- */
-
-
-.picdiv
-{
-    display: flex;
-    align-items: center;
-}
-
-
-
-
-
-
-
-/* ----- ABOUT IMG ----- */
-.container
-{
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-.profildiv
-{
-    flex-basis: 70%;
-    order: 2;
-}
-.profilimg
-{
-    width: 100%;
-    height: 100%;
-}
-
-
-
-.container_cube
-{
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-.profildiv_cube
-{
-    flex-basis: 70%;
-}
-.bluredbg_cube
-{
-    background-color: #ffffff60;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 20px;
-    padding: 30px 30px 30px 0;
-    margin: 0 30 30 30;
-}
-
-
-
-
-
-
-
-/* ----- KOCKA -----*/
-.scene
-{
-    perspective: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-.scene:hover
-{
-    transform: scale(1.5);
-}
-.cube
-{
-    transform-style: preserve-3d;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    -webkit-animation: rotate 25s ease-in-out infinite;
-            animation: rotate 25s ease-in-out infinite;
-    transform-origin: center center;
-}
-.side
-{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.front
-{
-    transform: translateZ(100px);
-    background-image: url("../img/info.png");
-}
-.left
-{
-    transform: translateX(-100px) rotateY(270deg);
-    background-image: url("../img/kolonics.png");
-}
-.back
-{
-    transform: translateZ(-100px) rotateY(180deg);
-    background-image: url("../img/széchenyi.jpg");
-}
-.right
-{
-    transform: translateX(100px) rotateY(90deg);
-    background-image: url("../img/ik.jpg");
-}
-
-@-webkit-keyframes rotate
-{
-    0% {transform: rotateY(0);}
-    25% {transform: rotateY(90deg);}
-    50% {transform: rotateY(180deg);}
-    75% {transform: rotateY(270deg);}
-    100% {transform: rotateY(360deg);}
-}
-@keyframes rotate {
-    0% {transform: rotateY(0);}
-    25% {transform: rotateY(90deg);}
-    50% {transform: rotateY(180deg);}
-    75% {transform: rotateY(270deg);}
-    100% {transform: rotateY(360deg);}
-}
-
-
-
-
-
-
 .moving
 {
     display: flex;
@@ -582,25 +315,113 @@ ul.ftr li a:hover::before
     }
 }
 
-
-
-
-
-.bluredbg_index
+/* ------------------------------------------------------------ ABOUT ------------------------------------------------------------ */
+.about_container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.profildiv
+{
+    flex-basis: 70%;
+    order: 2;
+}
+.profilimg
+{
+    width: 100%;
+    height: 100%;
+}
+.container_cube
+{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.profildiv_cube
+{
+    flex-basis: 70%;
+}
+.bluredbg_cube
 {
     background-color: #ffffff60;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 20px;
-    padding: 30px;
-    margin: 30;
+    padding: 30px 30px 30px 0;
+    margin: 0px 30px 30px 30px;
 }
 
 
+/* ---------- ABOUT KOCKA ---------- */
+.scene
+{
+    perspective: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.scene:hover
+{
+    transform: scale(1.5);
+}
+.cube
+{
+    transform-style: preserve-3d;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    -webkit-animation: rotate 25s ease-in-out infinite;
+            animation: rotate 25s ease-in-out infinite;
+    transform-origin: center center;
+}
+.side
+{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.front
+{
+    transform: translateZ(100px);
+    background-image: url("../img/info.png");
+}
+.left
+{
+    transform: translateX(-100px) rotateY(270deg);
+    background-image: url("../img/kolonics.png");
+}
+.back
+{
+    transform: translateZ(-100px) rotateY(180deg);
+    background-image: url("../img/széchenyi.jpg");
+}
+.right
+{
+    transform: translateX(100px) rotateY(90deg);
+    background-image: url("../img/ik.jpg");
+}
+@-webkit-keyframes rotate
+{
+    0% {transform: rotateY(0);}
+    25% {transform: rotateY(90deg);}
+    50% {transform: rotateY(180deg);}
+    75% {transform: rotateY(270deg);}
+    100% {transform: rotateY(360deg);}
+}
+@keyframes rotate {
+    0% {transform: rotateY(0);}
+    25% {transform: rotateY(90deg);}
+    50% {transform: rotateY(180deg);}
+    75% {transform: rotateY(270deg);}
+    100% {transform: rotateY(360deg);}
+}
 
-
-
-
+/* ------------------------------------------------------------ CODES ------------------------------------------------------------ */
 .webpg
 {
     display: flex;
@@ -616,11 +437,35 @@ ul.ftr li a:hover::before
     width: 1000px;
 }
 
+/* ------------------------------------------------------------ GALLERY ------------------------------------------------------------ */
+.gallery
+{
+    margin: 0px 30px 30px 30px;
+    background-color: #ffffff60;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+.gallery img
+{
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+    height: 200px;
+}
+.gallery img:hover
+{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
 
-
+/* ------------------------------------------------------------ CONTACT ------------------------------------------------------------ */
 .contact_body
 {
     background-image: url("../img/connection_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
 }
 .contact_container
 {
@@ -714,5 +559,283 @@ ul.ftr li a:hover::before
     .profile-name::after
     {
         margin-left: 0;
+    }
+}
+
+/* ------------------------------------------------------------ FOOTER ------------------------------------------------------------ */
+.footer
+{
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+    position: absolute;
+    width: 100%;
+    margin-top: 0; /* ? */
+    
+}
+ul.ftr
+{
+    position: relative;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+}
+ul.ftr li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px;
+}
+ul.ftr li a
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0,0,0,0.1);
+    backdrop-filter: blur(2px);
+    transition: 0.5s;
+    overflow: hidden;
+}
+ul.ftr li a:hover
+{
+    transform: translateY(-20px);
+}
+ul.ftr li a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: 0.5s;
+}
+ul.ftr li a:hover::before
+{
+    transform: skewX(45deg) translateX(-150px);
+}
+
+/* ------------------------------------------------------------ CV ------------------------------------------------------------ */
+.cv_body
+{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.cv_container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.cv_container .leftSide
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo
+{
+    padding-top: 40px;
+}
+.contactInfo ul
+{
+    position: relative;
+}
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactInfo ul li a
+{
+    text-decoration: none;
+}
+.contactInfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfo.hobbies li
+{
+    color: #03a9f4;
+    font-weight: 300;
+}
+.contactInfo.qr img
+{
+    height: 250px;
+}
+.cv_container .rightSide
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.title2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about
+{
+    margin-bottom: 50px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .school_year
+{
+    min-width: 150px;
+}
+.about .box .school_year h5
+{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.about .box .text h4
+{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    padding-left: 20px;
+}
+.langNprogs ul
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.langNprogs ul li
+{
+    list-style: none;
+    font-weight: 500;
+}
+@media (max-width: 1000px)
+{
+    .cv_container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .langNprogs ul
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contactInfo
+    {
+        text-align: center;
+    }
+}
+@media (max-width: 600px)
+{
+    .about .box
+    {
+        flex-direction: column;
+    }
+    .about .box .school_year
+    {
+        margin-bottom: 5px;
+    }
+    .langNprogs ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box
+    {
+        grid-template-columns: repeat(1,1fr);
     }
 }

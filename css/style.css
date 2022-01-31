@@ -482,7 +482,7 @@ ul.ftr li a:hover::before
 }
 .card:hover .circle::before
 {
-    background: #a6c3d3;
+    background: lightblue;
     clip-path: circle(400px at center);
     border-radius: 20px;
 }
@@ -607,25 +607,13 @@ ul.ftr li a:hover::before
     justify-content: center;
     align-items: center;
 }
-.webpg_card
+.webpg p
 {
-    position: relative;
-    width: 600px;
-    height: 350px;
-    display: block;
-    align-items: center;
-}
-.webpg_card img.big
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 80%;
-}
-.webpg_content{
-    padding-top: 50%;
     text-align: center;
+}
+.webpg p img.pgpreview
+{
+    width: 1000px;
 }
 
 

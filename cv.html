@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body
+        {
+            background: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container
+        {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            background: #fff;
+            margin: 50px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+        }
+        .container .leftSide
+        {
+            position: relative;
+            background: #003147;
+            padding: 40px;
+        }
+        .profileText
+        {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        .profileText .imgBx
+        {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .profileText .imgBx img
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profileText h2
+        {
+            color: #fff;
+            font-size: 1.5em;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.4em;
+        }
+        .profileText h2 span
+        {
+            font-size: 0.8em;
+            font-weight: 300;
+        }
+        .contactInfo
+        {
+            padding-top: 40px;
+        }
+        .title
+        {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .contactInfo ul
+        {
+            position: relative;
+        }
+        .contactInfo ul li
+        {
+            position: relative;
+            list-style: none;
+            margin: 10px 0;
+        }
+        .contactInfo ul li .icon
+        {
+            display: inline-block;
+            width: 30px;
+            font-size: 18px;
+            color: #03a9f4;
+        }
+        .contactInfo ul li a
+        {
+            text-decoration: none;
+        }
+        .contactInfo ul li span
+        {
+            color: #fff;
+            font-weight: 300;
+        }
+        .contactInfo.hobbies li
+        {
+            color: #03a9f4;
+            font-weight: 300;
+        }
+        .contactInfo.qr img
+        {
+            height: 250px;
+        }
+
+
+
+        .container .rightSide
+        {
+            position: relative;
+            background: #fff;
+            padding: 40px;
+        }
+        .about
+        {
+            margin-bottom: 50px;
+        }
+        .about:last-child
+        {
+            margin-bottom: 0;
+        }
+        .title2
+        {
+            color: #003147;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .about .box
+        {
+            display: flex;
+            flex-direction: row;
+            margin: 20px 0;
+        }
+        .about .box .school_year
+        {
+            min-width: 150px;
+        }
+        .about .box .school_year h5
+        {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .about .box .text h4
+        {
+            text-transform: uppercase;
+            color: #2a7da2;
+            font-size: 16px;
+        }
+        .skills .box
+        {
+            position: relative;
+            width: 100%;
+            display: grid;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .langNprogs ul
+        {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .langNprogs ul li
+        {
+            list-style: none;
+            font-weight: 500;
+        }
+        @media (max-width: 1000px)
+        {
+            .container
+            {
+                margin: 10px;
+                grid-template-columns: repeat(1,1fr);
+            }
+            .langNprogs ul
+            {
+                grid-template-columns: repeat(2,1fr);
+            }
+            .contactInfo
+            {
+                text-align: center;
+            }
+        }
+        @media (max-width: 600px)
+        {
+            .about .box
+            {
+                flex-direction: column;
+            }
+            .about .box .school_year
+            {
+                margin-bottom: 5px;
+            }
+            .langNprogs ul
+            {
+                grid-template-columns: repeat(1,1fr);
+            }
+            .skills .box
+            {
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftSide">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="img/profil2.jpg">
+                </div>
+                <h2>Ocskó Bianka<br><span>Tanuló</span></h2>
+            </div>
+
+            <div class="contactInfo">
+                <h3 class="title">Contact Info</h3>
+                <ul>
+                    <li>
+                        <a href="tel:+3630-433-3404">
+                            <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                            <span class="text">+36 30 433 3404</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:ocsko.bianka@gmail.com">
+                            <span class="icon"><ion-icon name="at-outline"></ion-icon></span>
+                            <span class="text">ocsko.bianka@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/OcskoBianka/">
+                            <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
+                            <span class="text">facebook.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/bianka-ocskó-370330223/">
+                            <span class="icon"><ion-icon name="logo-linkedin"></ion-icon></span>
+                            <span class="text">linkedin.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/OcskóBiankaCV.pdf" download="OcskóBiankaCV">
+                            <span class="icon"><ion-icon name="document-text-outline"></span>
+                            <span class="text" ></ion-icon>CV letöltése</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contactInfo hobbies">
+                <h3 class="title">Hobbik</h3>
+                <ul>
+                    <li>Számítógépes képszerkesztés</li>
+                    <li>3D tervezés és animálás</li>
+                    <li>Számítógépes rajzolás</li>
+                    <li>Számítógépes játék</li>
+                    <li>Kézműveskedés</li>
+                    <li>Barkácsolás</li>
+                    <li>Sportolás</li>
+                    <li>Fotózás</li>
+                </ul>
+            </div>
+
+            <div class="contactInfo qr">
+                <h3 class="title">Weboldal</h3>
+                <a href="https://seishinzeroxx.github.io/OcskoBiankaReference/" target="blank"><img src="img/qr-code.png"></a>
+            </div>
+        </div>
+
+        <div class="rightSide">
+            <div class="about">
+                <h2 class="title2">Profil</h2>
+                <p>
+                    Szeretek csapatban dolgozni, könnyen kijövök bárkivel, de ha a helyzet megköveteli, tudok egyedül is dolgozni. Nagyon pontos és precíz vagyok mind magánéletben, mind a 
+                    munkában, ezt köszönhetem a jó probléma megoldó készségemnek vagy pedig a problémák megoldására való hajlandóságomnak.
+                </p>
+            </div>
+            <div class="about">
+                <h2 class="title2">Tanulmányok</h2>
+                <div class="box">
+                    <div class="school_year">
+                        <h5>2019 - jelen</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Eötvös Lóránd Tudományegyetem</h4>
+                        <p>
+                            Jelenleg is töltöm Informatikai tanulmányaimat a Programtervező informatikus szakon, ahonnan aztán szeretném folytatni is őket, ugyancsak az informatika irányába.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="school_year">
+                        <h5>2014-2019</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Újbudai Széchenyi István Gimnázium</h4>
+                        <p>
+                            Gimnáziumi tanulmányaim alatt 2018. február 12.-én sikeres osztályozó vizsgát / előrehozott érettségit tettem Angolból és Informatikából, így megszerezve az utolsó 
+                            évi jegyemet 1 évvel előbb. Ezt követően, 2018. június 02.-án letettem középfokú angol nyelvvizsgám, majd 2018. szeptember 25.-én megkaptam ECDL bizonyítványomat a 
+                            sikeres vizsgámért. Ezek után, 2019. június 25.-én sikeres érettségit tettem.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="school_year">
+                        <h5>2006-2014</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Kolonics György Általános Iskola és Köznevelési Sportiskola</h4>
+                        <p>
+                            Általános iskolai tanulmányaimat itt, dráma tagozaton töltöttem, de a sport tagozat mindig is közelebb állt hozzám. Itt a dráma tagozat által szervezett előadásaink 
+                            és csoportmunkáink miatt megtanultam csapatban dolgozni és könnyen kijönni másokkal, vagy ha kell, vezetni másokat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="about skills">
+                <h2 class="title2">Képzettség</h2>
+                <div class="box">
+                    <ul>
+                        <li>Angol nyelv magabiztos használata</li>
+                        <li>Emelt szintű angol nyelvvizsga (B1 + C1)</li>
+                        <li>ECDL vizsga (2018)</li>
+                        <li>Microsoft Office magabiztos használata</li>
+                        <li>Windows operációs rendszer magabiztos használata</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about langNprogs">
+                <h2 class="title2">Tanult nyelvek / Használt programok</h2>
+                <ul>
+                    <li>C#</li>
+                    <li>Visual Studio / Code</li>
+                    <li>HTML</li>
+                    <li>SQL Developer</li>
+                    <li>PHP</li>
+                    <li>CodeBlocks</li>
+                    <li>JavaScript</li>
+                    <li>Notepad++</li>
+                    <li>Gimp</li>
+                    <li>Maya 2022</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

@@ -231,15 +231,15 @@ header
 }
 .card:hover img
 {
-    left: 72%;
-    height: 320px;
+    left: 75%;
+    height: 250px;
 }
 .card .content
 {
     position: relative;
-    width: 50%;
+    width: 55%;
     left: 20%;
-    padding: 20px 20px 20px 40px;
+    padding: 15px 15px 15px 30px;
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
@@ -249,6 +249,10 @@ header
     left: 0;
     opacity: 1;
     visibility: visible;
+}
+.card .content p
+{
+    font-size: 1.1em;
 }
 .card .content h2
 {
@@ -302,9 +306,9 @@ header
     }
     .card:hover img
     {
-        top: 70%;
+        top: 75%;
         left: 50%;
-        height: 300px;
+        height: 200px;
     }
 }
 @media (max-width: 420px)
@@ -642,7 +646,7 @@ ul.ftr li a:hover::before
 {
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     min-height: 1000px;
     background: #fff;
     margin: 50px;
@@ -750,6 +754,10 @@ ul.ftr li a:hover::before
     background: #fff;
     padding: 40px;
 }
+p
+{
+    text-align: justify;
+}
 .title2
 {
     color: #003147;
@@ -807,6 +815,22 @@ ul.ftr li a:hover::before
 .box .text.collapsed > p
 {
     display: none;
+}
+.section-toggle
+{
+    cursor: pointer;
+    font-size: 14px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.section-toggle::after
+{
+    content: "\25B2";
+    font-weight: 700;
+}
+.section-toggle.collapsed::after
+{
+    content: "\25BC";
 }
 .skills .box, .softwareSkills .box, .professionalCompetences .box
 {
